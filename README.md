@@ -28,40 +28,6 @@ Utilizes **ThingSpeak** for live dashboarding, mimicking industrial SCADA system
 
 ---
 
-## 🛠 System Architecture
-
-The data flow follows a standard IoT pipeline architecture: **Perception $\rightarrow$ Edge Processing $\rightarrow$ Network $\rightarrow$ Application**.
-
-graph LR
-    subgraph Source [Data Source]
-        M(Industrial Motor)
-    end
-
-    subgraph Perception [Sensing Layer]
-        A[ADXL345<br/>(3-Axis Vibration)]
-        T[DHT22<br/>(Environmental)]
-    end
-
-    subgraph Edge [Edge Computing Node]
-        STM[STM32F446RE<br/>ARM Cortex-M4<br/><i>Signal Pre-processing</i>]
-    end
-
-    subgraph Transport [Network Layer]
-        ESP[ESP8266 Gateway<br/><i>MQTT/HTTP Protocol</i>]
-    end
-
-    subgraph Cloud [Analytics Layer]
-        TS[ThingSpeak Cloud<br/><i>Time-Series DB & Viz</i>]
-    end
-
-    M -.-> A & T
-    A & T -->|I2C / GPIO| STM
-    STM -->|UART| ESP
-    ESP -->|TCP/IP| TS
-
-
-
-
 ## ⚙️ Technical Stack
 
 | Layer | Technology Used | Description |
