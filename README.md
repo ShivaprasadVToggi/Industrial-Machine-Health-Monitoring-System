@@ -82,18 +82,6 @@ The system successfully streams telemetry data to the cloud. Below are the visua
 
 > *Note: Spikes in the Z-Axis graph correspond to simulated mechanical unbalance events introduced during testing.*
 
----
-
-## 🔌 Wiring Pinout
-| Sensor Pin | STM32 Pin | Protocol |
-|------------|-----------|----------|
-| **ADXL SDA** | PB9 (D14) | I2C1 |
-| **ADXL SCL** | PB8 (D15) | I2C1 |
-| **DHT22 Data**| PB5 (D4) | GPIO |
-| **ESP8266 RX** | PA9 (D8) | UART1 |
-| **ESP8266 TX** | PA10 (D2) | UART1 |
-
----
 
 ## 🔮 Future Scope (AI/ML)
 *   **On-Device FFT:** Implementing Fast Fourier Transform using the ARM CMSIS-DSP library to convert time-domain vibration data into frequency-domain for spectral fault signature analysis.
