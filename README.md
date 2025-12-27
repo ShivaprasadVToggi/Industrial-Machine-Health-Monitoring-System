@@ -33,7 +33,7 @@ Utilizes **ThingSpeak** for live dashboarding, mimicking industrial SCADA system
 | Layer | Technology Used | Description |
 | :--- | :--- | :--- |
 | **Edge Controller** | STM32 Nucleo-F446RE | 84MHz ARM Cortex-M4, Hardware FPU for decimal processing. |
-| **Sensing** | MEMS ADXL345 | Digital Accelerometer ($\pm$4g range) for vibration capture. |
+| **Sensing** | MEMS ADXL345 | Digital Accelerometer for vibration capture. |
 | **Environmental** | DHT22 | Precision temperature & humidity sensor for thermal profiling. |
 | **Communication** | ESP8266 (ESP-01) | UART-to-WiFi Bridge using AT Command firmware. |
 | **Cloud/Data** | ThingSpeak API | REST API for data ingestion and MATLAB-based visualization. |
