@@ -104,13 +104,7 @@ The system successfully streams telemetry data to the cloud. Below are the visua
 ### 👥 Project Contributors
 
 **Shivaprasad V Toggi** (Team Lead)  
-*Lead Embedded Engineer & System Architect*
-
 **Varun Gowda J**  
-*Hardware Integration Specialist*
-
 **Sneha K M**  
-*Technical Research & Documentation Lead*
-
 **Sinchana**  
-*Data Visualization & Analytics Engineer*
+
